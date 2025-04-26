@@ -22,12 +22,12 @@ namespace Menu.Data
             // Define relationships
             modelBuilder.Entity<DishIngredient>()
                 .HasOne(di => di.Dish)
-                .WithMany(d => d.DishIngredient) // ✅ Corrected reference
+                .WithMany(d => d.DishIngredient)
                 .HasForeignKey(di => di.DishId);
 
             modelBuilder.Entity<DishIngredient>()
                 .HasOne(di => di.Ingredient)
-                .WithMany(i => i.DishIngredient) // ✅ Corrected reference
+                .WithMany(i => i.DishIngredient) 
                 .HasForeignKey(di => di.IngredientId);
 
             modelBuilder.Entity<Dish>().HasData(
