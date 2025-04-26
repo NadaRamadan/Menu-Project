@@ -3,7 +3,7 @@ Menu Project
 This project is a basic Menu Viewer built using ASP.NET Core MVC.
 It displays a list of dishes and detailed information about each dish, including its ingredients.
 
-Features
+#Features
 View a list of all available dishes.
 
 View detailed information about each dish and its ingredients.
@@ -15,13 +15,13 @@ ASP.NET Core MVC
 
 Entity Framework Core
 
-Project Structure
+#Project Structure
 Models
 Dish
 
 Represents a dish.
 
-Properties: Id, Name, Description, Price, etc.
+#Properties: Id, Name, Description, Price, etc.
 
 Ingredient
 
@@ -35,12 +35,12 @@ Represents the relationship between dishes and ingredients.
 
 Properties: DishId, IngredientId, QuantityUsed, etc.
 
-Controllers
+#Controllers
 DishController
 
 (You may also have IngredientController or similar if needed.)
 
-Views
+#Views
 Each model mainly has:
 
 Index: A page to display a list of items.
